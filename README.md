@@ -36,4 +36,4 @@ Commons Attribution 4.0 International License (CC-BY-4.0), available at http://c
 **NOTE:** Please make sure that you have no existing docker containers that could affect this application’s fabric network before following the instructions. Also, make sure that you don’t have any existing key-store data to avoid errors during the deployment of the network. If you have existing docker containers, you can clean it via this command on terminal: `docker stop $(docker ps -aq) && docker rm $(docker ps -aq)`.
 
 ### Setup the Environment:
-#### Step 1: 
+#### Step 1: create folder **"invoice"** inside the fabric-samples.
