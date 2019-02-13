@@ -25,4 +25,14 @@ Hyperledger Project source code files are made available under the Apache
 License, Version 2.0 (Apache-2.0), located in the [LICENSE](LICENSE) file.
 Hyperledger Project documentation files are made available under the Creative
 Commons Attribution 4.0 International License (CC-BY-4.0), available at http://creativecommons.org/licenses/by/4.0/.
-# invoice
+
+# INVOICE
+
+
+## Development Environment
+### Go version: go version go1.10.4 linux/amd64
+### Operating System: Ubuntu 18.04.1 LTS
+
+**NOTE:** Please make sure that you have no existing docker containers that could affect this application’s fabric network before following the instructions. Also, make sure that you don’t have any existing key-store data to avoid errors during the deployment of the network. If you have existing docker containers, you can clean it via this command on terminal: `docker stop $(docker ps -aq) && docker rm $(docker ps -aq)`.
+
+
