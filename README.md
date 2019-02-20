@@ -26,7 +26,9 @@ License, Version 2.0 (Apache-2.0), located in the [LICENSE](LICENSE) file.
 Hyperledger Project documentation files are made available under the Creative
 Commons Attribution 4.0 International License (CC-BY-4.0), available at http://creativecommons.org/licenses/by/4.0/.
 
-## INVOICE
+
+
+## INVOICE (Group 6)
 
 
 ### Development Environment
@@ -75,4 +77,79 @@ Then execute the following:
 #### Step 4:
 To test the if the file is working you can use POSTMAN or Insomia REST Client or any other tools.
 
+#### Testing Endpoints
+
+#### Display All Invoices
+##### http://localhost:3000/
+##### Use the GET http request in this function as we are getting data
+<br />
+<br />
+<br />
+
+#### Raise Invoice
+##### http://localhost:3000/invoice
+##### Use the POST http request in this function as we are pushing data
+Select **Form URL Encoded** as a structure
+##### Parameters
++ invoiceid
++ invoicenum
++ billedto
++ invoicedate
++ invoiceamount
++ itemdescription
++ gr
++ ispaid
++ paidamount
++ repaid
++ repaymentamount
+
+##### NOTE: gr , ispaid , paidamount , repaid , repaymentamount default values are as follows N , N , 0 , N , 0
+**gr = N**
+<br />
+**ispaid = N**
+<br />
+**paidamount = 0**
+<br />
+**repaid = N**
+<br />
+**repaymentamount = 0**
+<br />
+<br />
+<br />
+
+#### Goods Received
+##### http://localhost:3000/invoice
+##### Use the PUT http request in this function as we are modifying a data
+Select **Form URL Encoded** as a structure
+
+##### Parameters
++ invoiceid
++ gr
+<br />
+<br />
+<br />
+
+#### Bank Payment to Supplier
+##### http://localhost:3000/invoice
+##### Use the PUT http request in this function as we are modifying a data
+Select **Form URL Encoded** as a structure
+
+##### Parameters
++ invoiceid
++ ispaid
+<br />
+<br />
+<br />
+
+#### OEM Repays to Bank
+##### http://localhost:3000/invoice
+##### Use the PUT http request in this function as we are modifying a data
+Select **Form URL Encoded** as a structure
+
+##### Parameters
++ invoiceid
++ repaid
+<br />
+<br />
+<br />
 
